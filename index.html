@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Stili css -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<title>Spotify Dummy</title>
+	</head>
+	<body>
+		<div class="web-app">
+			<!-- SECTION Sezione principale -->
+			<div class="web-app-main">
+				<!-- NOTE Menu sinistra -->
+				<div class="aside">
+					<div class="logo">
+						<a href="https://www.spotify.com">
+							<img
+								src="./assets/img/logo-small.svg"
+								alt="logo spotify"
+							/>
+							<img
+								src="./assets/img/logo.svg"
+								alt="logo spotify"
+							/>
+						</a>
+					</div>
+					<!-- NOTE menu navigazione -->
+					<div class="nav-aside">
+						<ul>
+							<li>
+								<a href="#">
+									<img
+										src="./assets/img/home.svg"
+										alt="home"
+									/>
+									<span>Home</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img
+										src="./assets/img/search.svg"
+										alt="search"
+									/>
+								</a>
+								<span>Cerca</span>
+							</li>
+							<li>
+								<a href="#">
+									<img
+										src="./assets/img/libreria.svg"
+										alt="library"
+									/>
+								</a>
+								<span>La tua libreria</span>
+							</li>
+							<li class="playlist">
+								<a href="#">
+									<i class="fa-solid fa-square-plus"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- NOTE Account -->
+					<div class="account">
+						<a href="#">
+							<img
+								src="./assets/img/download.svg"
+								alt="download"
+							/>
+							<span>Installa app</span>
+						</a>
+						<img src="./assets/img/profile.svg" alt="profile" />
+					</div>
+				</div>
+				<!-- NOTE Pagina principale -->
+				<div class="main">
+					<div class="cta">
+						<button>effettua l'upgrade</button>
+					</div>
+					<!-- NOTE Contenuto principale -->
+					<div class="content">
+						<!-- NOTE Nav-main -->
+						<div class="nav-main">
+							<ul>
+								<li>
+									<a href="#">in evidenza</a>
+								</li>
+								<li>
+									<a href="#">podcast</a>
+								</li>
+								<li>
+									<a href="#">classifiche</a>
+								</li>
+								<li>
+									<a href="#">generi e mood</a>
+								</li>
+								<li>
+									<a href="#">nuove uscite</a>
+								</li>
+								<li>
+									<a href="#">scopri</a>
+								</li>
+							</ul>
+						</div>
+						<!-- NOTE Riprodotti di recente -->
+						<div class="music">
+							<div class="played">
+								<h2>Recently played</h2>
+								<div class="songs">
+									<div class="song-card">
+										<img
+											src="./assets/img/metal_lifting.jpg"
+											alt="cover"
+										/>
+										<h3>Heavy Metal</h3>
+										<p>Top Musichine</p>
+									</div>
+									<div class="song-card">
+										<img
+											src="./assets/img/stranger.jpeg"
+											alt="cover"
+										/>
+										<h3>Stranger Things</h3>
+										<p>Top Musichine</p>
+									</div>
+									<div class="song-card">
+										<img
+											src="./assets/img/aquietplace.jpeg"
+											alt="cover"
+										/>
+										<h3>A quiet place</h3>
+										<p>Top Musichine</p>
+									</div>
+									<div class="song-card">
+										<img
+											src="./assets/img/split.jpeg"
+											alt="cover"
+										/>
+										<h3>Split</h3>
+										<p>Top Musichine</p>
+									</div>
+									<div class="song-card">
+										<img
+											src="./assets/img/cure.jpeg"
+											alt="cover"
+										/>
+										<h3>A cure for wellness</h3>
+										<p>Top Musichine</p>
+									</div>
+									<div class="song-card">
+										<img
+											src="./assets/img/sinister.jpeg"
+											alt="cover"
+										/>
+										<h3>Sinister</h3>
+										<p>Top Musichine</p>
+									</div>
+								</div>
+							</div>
+							<div class="foryou"></div>
+							<div class="artists"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- SECTION Player -->
+			<div class="web-app-player"></div>
+		</div>
+	</body>
+</html>

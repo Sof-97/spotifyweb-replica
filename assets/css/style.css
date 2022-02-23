@@ -1,0 +1,180 @@
+/* SECTION reset vari */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2,
+h3,
+h3 + p{
+    color: #fff;
+}
+
+/* SECTION Web-app */
+.web-app{
+    height: 100vh;
+}
+
+.web-app-main{
+    height: 90%;
+    display: flex;
+}
+
+.web-app-player{
+    height: 10%;
+    background-color: #282828;
+}
+
+
+/* SECTION aside */
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    width: 10%;
+}
+
+.logo{
+    margin: 10px 0;
+    height: fit-content;
+}
+
+.logo a img:first-child{
+    width: 2em;
+}
+
+.aside img{
+    width: 2em;
+}
+
+.logo a img:last-child{
+    display: none;
+}
+
+.nav-aside{
+    opacity: 0.7;
+}
+
+.nav-aside li{
+    margin-bottom: 5px;
+}
+
+.nav-aside span{
+    color: #fff;
+    display: none;
+    opacity: 0.7;
+}
+
+.playlist{
+    margin-top: 10px;
+}
+
+.fa-solid.fa-square-plus{
+    font-size: 2em;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.account{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account a img{
+    scale: 0.7;
+}
+
+.account span{
+    display: none;
+}
+
+.account >img {
+    scale: 0.8;
+    background-color: #ccc;
+    border-radius: 100%;
+}
+
+/* SECTION main */
+
+.main{
+    background-color: #141922;
+    width: 90%;
+    overflow-y: scroll;
+
+}
+
+.cta{
+    background-color: #080B12;
+    padding: 20px 20px 20px 0;
+    text-align: right;
+}
+
+.cta button{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+/* NOTE Nav main */
+
+.nav-main ul{
+    padding: 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-main ul li{
+    padding: 10px 8px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+.nav-main ul li a{
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+/* NOTE Contenuto */
+
+h3,
+h3 + p{
+    text-align: center;
+}
+
+.music{
+    padding: 0 10px;
+}
+
+.songs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.song-card{
+    flex-basis: calc(100%/2- 10px)
+}
