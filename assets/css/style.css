@@ -25,7 +25,9 @@ h2 + p,
 h3 + p,
 h6,
 h6 + p,
-.icon{
+.icon,
+.playlist-item,
+.account a{
     color: #fff;
 }
 
@@ -42,6 +44,8 @@ h6 + p,
 .web-app-player{
     height: 10%;
     background-color: #282828;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -53,6 +57,7 @@ h6 + p,
     align-items: center;
     background-color: #000;
     width: 10%;
+    overflow: hidden;
 }
 
 .logo{
@@ -69,6 +74,7 @@ h6 + p,
 }
 
 .logo a img:last-child{
+    width: 9em;
     display: none;
 }
 
@@ -88,12 +94,31 @@ h6 + p,
 
 .playlist{
     margin-top: 10px;
+    line-height: 2em;
+    font-weight: 600;
 }
 
-.fa-solid.fa-square-plus{
+.playlist h3{
+    font-size: 1.5em;
+}
+
+.playlist-item{
+    padding-left: 1.5em;
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.playlist a i {
+    padding: 0.3em 0;
+    vertical-align: middle;
     font-size: 2em;
     color: #fff;
     opacity: 0.7;
+}
+
+.playlist ul,
+.playlist h3{
+    display: none;
 }
 
 .account{
@@ -104,17 +129,28 @@ h6 + p,
 }
 
 .account a img{
+    vertical-align: middle;
     scale: 0.7;
+    text-decoration: none;
 }
 
 .account span{
+    font-size: 0.8em;
+    opacity: 0.7;
     display: none;
 }
 
-.account >img {
+.profile >img {
     scale: 0.8;
     background-color: #ccc;
-    border-radius: 100%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.profile span{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 /* SECTION main */
@@ -122,12 +158,17 @@ h6 + p,
 .main{
     background-color: #141922;
     width: 90%;
+    position: relative;
 }
 
 .cta{
     background-color: #080B12;
     padding: 20px 20px 20px 0;
     text-align: right;
+    opacity: 0.7;
+    position: absolute;
+    right: 0px;
+    width: 100%;
 }
 
 .cta button{
@@ -151,7 +192,7 @@ h6 + p,
 .nav-main ul li{
     padding: 10px 8px;
     text-transform: uppercase;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 .nav-main ul li a{
@@ -164,15 +205,11 @@ h6 + p,
     content: '';
     width: 50%;
     height: 2px;
-    display: block;
+    display: none;
     background-color: #40c28c;
     transform: translate(50%);
     margin-top: 1px;
-}
-
-.focused:focus{
-    display: block;
-}
+}   
 
 /* NOTE Contenuto */
 
@@ -182,7 +219,8 @@ h3 + p{
 }
 
 .content{
-    height: calc(90vh - 80px);
+    padding-top: 80px;
+    height: calc(90vh);
     overflow-y: scroll;
 }
 
@@ -236,7 +274,7 @@ h2 + p{
 
 .web-app-player{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -263,11 +301,6 @@ h6{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.player{
-    flex-grow: 1;
-    margin: 0 20px;
 }
 
 .media-button{
