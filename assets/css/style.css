@@ -21,7 +21,11 @@ html{
 
 h2,
 h3,
-h3 + p{
+h2 + p,
+h3 + p,
+h6,
+h6 + p,
+.icon{
     color: #fff;
 }
 
@@ -118,8 +122,6 @@ h3 + p{
 .main{
     background-color: #141922;
     width: 90%;
-    overflow-y: scroll;
-
 }
 
 .cta{
@@ -158,6 +160,20 @@ h3 + p{
     font-weight: 600;
 }
 
+.focused::after{
+    content: '';
+    width: 50%;
+    height: 2px;
+    display: block;
+    background-color: #40c28c;
+    transform: translate(50%);
+    margin-top: 1px;
+}
+
+.focused:focus{
+    display: block;
+}
+
 /* NOTE Contenuto */
 
 h3,
@@ -165,16 +181,150 @@ h3 + p{
     text-align: center;
 }
 
+.content{
+    height: calc(90vh - 80px);
+    overflow-y: scroll;
+}
+
 .music{
     padding: 0 10px;
 }
 
-.songs{
+.foryou{
+    margin-top: 20px;
+}
+
+.songs,
+.playlist,
+.artists{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 15px;
 }
 
-.song-card{
-    flex-basis: calc(100%/2- 10px)
+
+.song-card img,
+.playlist-card img,
+.artists-card img{
+    width: 100%;
+}
+
+.song-card,
+.playlist-card,
+.artists-card{
+    margin-top: 10px;
+    flex-basis: calc(100%/2 - 5px);
+    flex-shrink: 0;
+}
+
+.artists-card img{
+    clip-path: circle(50%);
+}
+
+h3{
+    font-size: 0.9em;
+}
+
+h3 + p,
+h2 + p{
+    font-size: 0.7em;
+    opacity: 0.6;    
+}
+
+/* SECTION Player */
+
+.web-app-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playing img{
+    height: 5vh;
+    margin-right: 5px;
+}
+
+h6{
+    font-size: 0.8em;
+}
+
+.playing p{
+    font-size: 0.7em;
+    opacity: 0.7;
+}
+
+.playing{
+    display: flex;
+}
+
+.liked{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.player{
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.media-button{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2em;
+}
+
+.media-button i:nth-of-type(4n + 1){
+    font-size: 0.7em;
+}
+
+.timeline{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time{
+    color: #fff;
+    font-size: 0.7em;
+}
+
+.settings{
+    display: none; 
+}
+
+/* NOTE Slider */
+
+input[type=range]{
+    flex-grow: 1;
+    margin: 0 5px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb,
+input[type=range]::-moz-range-thumb{
+    height: 15px;
+    width: 15px;
+    background-color: #40c28c;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track,
+input[type=range]::-moz-range-track{
+    border: 2px solid #404040;
+    border-radius: 20px;
+    background-color: #c1c1c1;
+    height: 15px;
+}
+
+input[type=range]::-moz-range-progress{
+    background-color: #40c28c;
+    height: 15px;
+    border-radius: 20px;
 }
