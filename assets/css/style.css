@@ -27,7 +27,8 @@ h6,
 h6 + p,
 .icon,
 .playlist-item,
-.account a{
+.account a,
+.artists span{
     color: #fff;
 }
 
@@ -37,12 +38,12 @@ h6 + p,
 }
 
 .web-app-main{
-    height: 90%;
+    height: calc(100% - 90px);
     display: flex;
 }
 
 .web-app-player{
-    height: 10%;
+    height: 90px;
     background-color: #282828;
     position: relative;
     z-index: 1;
@@ -233,7 +234,7 @@ h3 + p{
 }
 
 .songs,
-.playlist,
+.row-foryou,
 .artists{
     display: flex;
     flex-wrap: wrap;
@@ -243,13 +244,13 @@ h3 + p{
 
 
 .song-card img,
-.playlist-card img,
+.foryou-card img,
 .artists-card img{
     width: 100%;
 }
 
 .song-card,
-.playlist-card,
+.foryou-card,
 .artists-card{
     margin-top: 10px;
     flex-basis: calc(100%/2 - 5px);
@@ -304,7 +305,7 @@ h6{
 }
 
 .media-button{
-    margin-bottom: 5px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -330,9 +331,15 @@ h6{
     display: none; 
 }
 
+.pc-folder{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* NOTE Slider */
 
-input[type=range]{
+.timeline input[type=range]{
     flex-grow: 1;
     margin: 0 5px;
     -webkit-appearance: none;
@@ -340,24 +347,56 @@ input[type=range]{
     background: transparent;
 }
 
-input[type=range]::-webkit-slider-thumb,
-input[type=range]::-moz-range-thumb{
+.timeline input[type=range]::-webkit-slider-thumb,
+.timeline input[type=range]::-moz-range-thumb{
     height: 15px;
     width: 15px;
     background-color: #40c28c;
     border: none;
 }
 
-input[type=range]::-webkit-slider-runnable-track,
-input[type=range]::-moz-range-track{
+.timeline input[type=range]::-webkit-slider-runnable-track,
+.timeline input[type=range]::-moz-range-track{
     border: 2px solid #404040;
     border-radius: 20px;
     background-color: #c1c1c1;
     height: 15px;
 }
 
-input[type=range]::-moz-range-progress{
+.timeline input[type=range]::-moz-range-progress{
     background-color: #40c28c;
     height: 15px;
+    border-radius: 20px;
+}
+
+
+/* Slider Volume */
+.settings input[type=range]{
+    flex-grow: 1;
+    margin: 0 5px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.settings input[type=range]::-webkit-slider-thumb,
+.settings input[type=range]::-moz-range-thumb{
+    height: 10px;
+    width: 10px;
+    background-color: #3379ce;
+    border: none;
+}
+
+.settings input[type=range]::-webkit-slider-runnable-track,
+.settings input[type=range]::-moz-range-track{
+    border: 2px solid #404040;
+    border-radius: 20px;
+    background-color: #c1c1c1;
+    height: 10px;
+}
+
+.settings input[type=range]::-moz-range-progress{
+    background-color: #3379ce;
+    height: 10px;
     border-radius: 20px;
 }

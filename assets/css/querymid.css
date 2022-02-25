@@ -1,8 +1,9 @@
-@media screen and (min-width: 550px){
+
+/* SECTION Mini Tablet */
+@media screen and (min-width: 550px) {
     
     .aside{
         min-width: fit-content;
-        
     }
 
     /* NOTE Resize logo */
@@ -47,9 +48,12 @@
         align-items: flex-start;
     }
 
-    .playlist ul{
-        flex-shrink: 1;
+    .aside .playlist div{
         overflow-y: scroll;
+    }
+
+    .song-card:nth-child(odd){
+        margin-left: 10px;
     }
 
     /* NOTE Account */
@@ -69,5 +73,57 @@
         border-bottom: 1px solid #ccc;
         margin-bottom: 5px;
     }
+
+    .songs,
+    .row-foryou,
+    .artists{
+        justify-content: normal;
+    }
 }
 
+/* SECTION Tablet */
+@media screen and (min-width: 810px) and (max-width: 1023px){
+
+    .song-card,
+    .foryou-card,
+    .artists-card{
+        flex-basis: calc((100%/4) - 10px);
+        margin-left: 10px;
+    }
+
+    .settings{
+        display: block;
+    }
+
+
+}
+
+/* NOTE Full screen */
+@media screen and (min-width: 1024px) {
+
+    .song-card,
+    .foryou-card,
+    .artists-card{
+        flex-basis: calc((100%/5) - 10px);
+        margin-left: 10px;
+    }
+
+    .timeline{
+        width: 160%;
+        transform: translate(-18%);
+    }
+
+    .settings{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .song-card,
+    .foryou-card,
+    .artists-card{
+        flex-basis: calc((100%/7) - 10px);
+        margin-left: 10px;
+    }
+}

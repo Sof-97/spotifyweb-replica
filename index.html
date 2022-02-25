@@ -6,10 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Stili css -->
 		<link rel="stylesheet" href="./assets/css/style.css" />
-		<link rel="stylesheet" href="./assets/css/querymid.css">
-		<link rel="stylesheet" href="./assets/css/querytab.css">
-		<link rel="stylesheet" href="./assets/css/queryfull.css">
-
+		<link rel="stylesheet" href="./assets/css/querymid.css" />
+		<link rel="stylesheet" href="./assets/css/querytab.css" />
+		<link rel="stylesheet" href="./assets/css/queryfull.css" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -82,16 +81,34 @@
 									<i class="fa-solid fa-square-plus"></i>
 									<span>Crea Playlist</span>
 								</a>
-								<ul>
-									<li class="playlist-item">Playlist Bella</li>
-									<li class="playlist-item">Playlist Bella</li>
-									<li class="playlist-item">Playlist Bella</li>
-									<li class="playlist-item">Playlist Bella</li>
-									<li class="playlist-item">Playlist Bella</li>
-									<li class="playlist-item">Playlist Bella</li>
-									<li class="playlist-item">Playlist Bella</li>
-									<li class="playlist-item">Playlist Bella</li>
-								</ul>
+								<div>
+									<ul>
+										<li class="playlist-item">
+											Playlist Bella
+										</li>
+										<li class="playlist-item">
+											Playlist Bella
+										</li>
+										<li class="playlist-item">
+											Playlist Bella
+										</li>
+										<li class="playlist-item">
+											Playlist Bella
+										</li>
+										<li class="playlist-item">
+											Playlist Bella
+										</li>
+										<li class="playlist-item">
+											Playlist Bella
+										</li>
+										<li class="playlist-item">
+											Playlist Bella
+										</li>
+										<li class="playlist-item">
+											Playlist Bella
+										</li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -121,7 +138,9 @@
 						<div class="nav-main">
 							<ul>
 								<li>
-									<a class="focused" href="#" autofocus>in evidenza</a>
+									<a class="focused" href="#" autofocus>
+										in evidenza
+									</a>
 								</li>
 								<li>
 									<a class="focused" href="#">podcast</a>
@@ -130,7 +149,9 @@
 									<a class="focused" href="#">classifiche</a>
 								</li>
 								<li>
-									<a class="focused" href="#">generi e mood</a>
+									<a class="focused" href="#">
+										generi e mood
+									</a>
 								</li>
 								<li>
 									<a class="focused" href="#">nuove uscite</a>
@@ -199,29 +220,47 @@
 							<!-- NOTE Consigliati -->
 							<div class="foryou">
 								<h2>Creato per Don Giovanni</h2>
-								<p>Più ascolti, più accurati saranno i suggerimenti</p>
-								<div class="playlist">
-									<div class="playlist-card">
-										<img src="./assets/img/radar.jpeg" alt="radar">
+								<p>
+									Più ascolti, più accurati saranno i
+									suggerimenti
+								</p>
+								<div class="row-foryou">
+									<div class="foryou-card">
+										<img
+											src="./assets/img/radar.jpeg"
+											alt="radar"
+										/>
 										<h3>Release Radar</h3>
 									</div>
-									<div class="playlist-card">
-										<img src="./assets/img/mixdaily.jpeg" alt="daily mix">
+									<div class="foryou-card">
+										<img
+											src="./assets/img/mixdaily.jpeg"
+											alt="daily mix"
+										/>
 										<h3>Daily Mix 1</h3>
 									</div>
 								</div>
 							</div>
 							<!-- NOTE Artisti  -->
-							<div class="artists">
+							<div >
 								<h2>Artisti più popolari</h2>
-								<p>Più ascolti, più accurati saranno i suggerimenti</p>
+								<p>
+									Più ascolti, più accurati saranno i
+									suggerimenti
+								</p>
 								<div class="artists">
 									<div class="artists-card">
-										<img src="./assets/img/youg.jpeg" alt="artist">
+										<img
+											src="./assets/img/youg.jpeg"
+											alt="artist"
+										/>
 										<h3>Youg</h3>
 									</div>
 									<div class="artists-card">
-										<img src="./assets/img/einaudi.jpeg" alt="artist">
+										<img
+											src="./assets/img/einaudi.jpeg"
+											alt="artist"
+										/>
 										<h3>Einaudi</h3>
 									</div>
 								</div>
@@ -234,11 +273,14 @@
 			<div class="web-app-player">
 				<!-- NOTE Musica selezionata -->
 				<div class="playing">
-					<img src="./assets/img/sinister.jpeg" alt="cover">
+					<img src="./assets/img/sinister.jpeg" alt="cover" />
 					<div>
 						<h6>Sinister</h6>
-						<p>Brano <br>
-						nome</p>	
+						<p>
+							Brano
+							<br />
+							nome
+						</p>
 					</div>
 					<div class="liked">
 						<i class="fa-regular fa-heart icon"></i>
@@ -247,6 +289,19 @@
 				</div>
 				<!-- NOTE In riproduzione -->
 				<div class="player">
+					
+					<!-- NOTE Scroll tempo -->
+					<div class="timeline">
+						<span class="time">2:32</span>
+						<input
+							type="range"
+							min="0"
+							max="100"
+							value="40"
+							id="timestamp"
+						/>
+						<span class="time">4:20</span>
+					</div>
 					<!-- NOTE Play pausa -->
 					<div class="media-button">
 						<i class="icon fa-solid fa-shuffle"></i>
@@ -255,18 +310,17 @@
 						<i class="icon fa-solid fa-forward-step"></i>
 						<i class="icon fa-solid fa-arrow-rotate-right"></i>
 					</div>
-					<!-- NOTE Scroll tempo -->
-					<div class="timeline">
-						<span class="time">2:32</span>
-						<input type="range" min="0" max="100" value="40" id="timestamp">
-						<span class="time">4:20</span>
-					</div>
 				</div>
 				<!-- NOTE Parte destra selettore volume -->
-				<div class="settings">
-					<i class="fa-solid fa-list-ul icon"></i>
-					<i class="fa-solid fa-desktop icon"></i>
-					<i class="fa-solid fa-volume-high icon"></i>
+				<div class="settings">					
+					<div class="volume">
+						<i class="fa-solid fa-volume-high icon"></i>
+						<input type="range" name="volume" id="volume" />
+					</div>
+					<div class="pc-folder">
+						<i class="fa-solid fa-list-ul icon"></i>
+						<i class="fa-solid fa-desktop icon"></i>
+					</div>
 				</div>
 			</div>
 		</div>
