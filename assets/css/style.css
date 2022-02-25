@@ -79,7 +79,7 @@ h6 + p,
     display: none;
 }
 
-.nav-aside{
+.nav-aside li a{
     opacity: 0.7;
 }
 
@@ -176,6 +176,7 @@ h6 + p,
     text-transform: uppercase;
     font-weight: 600;
     color: white;
+    opacity: 0.7;
     background-color: transparent;
     border-radius: 20px;
     padding: 10px 30px;
@@ -194,6 +195,7 @@ h6 + p,
     padding: 10px 8px;
     text-transform: uppercase;
     font-size: 0.8em;
+    position: relative;
 }
 
 .nav-main ul li a{
@@ -204,11 +206,13 @@ h6 + p,
 
 .focused::after{
     content: '';
-    width: 50%;
+    width: 40px;
     height: 2px;
     display: none;
     background-color: #40c28c;
-    transform: translate(50%);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin-top: 1px;
 }   
 
@@ -221,7 +225,7 @@ h3 + p{
 
 .content{
     padding-top: 80px;
-    height: calc(90vh);
+    height: 100%;
     overflow-y: scroll;
 }
 
@@ -229,8 +233,10 @@ h3 + p{
     padding: 0 10px;
 }
 
-.foryou{
+.foryou,
+.singer{
     margin-top: 20px;
+    padding-bottom: 10px;
 }
 
 .songs,
@@ -257,7 +263,7 @@ h3 + p{
     flex-shrink: 0;
 }
 
-.artists-card img{
+.artists-card div{
     clip-path: circle(50%);
 }
 
@@ -280,7 +286,7 @@ h2 + p{
 }
 
 .playing img{
-    height: 5vh;
+    height: 50px;
     margin-right: 5px;
 }
 
@@ -363,6 +369,7 @@ h6{
     height: 15px;
 }
 
+.timeline input[type=range]::-webkit-progress-value,
 .timeline input[type=range]::-moz-range-progress{
     background-color: #40c28c;
     height: 15px;
@@ -382,7 +389,7 @@ h6{
 .settings input[type=range]::-webkit-slider-thumb,
 .settings input[type=range]::-moz-range-thumb{
     height: 10px;
-    width: 10px;
+    width: 17px;
     background-color: #3379ce;
     border: none;
 }
@@ -399,4 +406,35 @@ h6{
     background-color: #3379ce;
     height: 10px;
     border-radius: 20px;
+}
+
+/* Hover */
+
+.foryou-card,
+.song-card{
+    position: relative;
+}
+
+.foryou-card:hover .hover,
+.song-card:hover .hover{
+    width: 100%;
+    height: calc(100% - 22px);
+    position: absolute;
+    background-color: #000;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover:hover i{
+    color: #fff;
+    padding: 20px;
+    font-size: 3em;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.hover{
+    display: none;
 }

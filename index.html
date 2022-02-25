@@ -7,8 +7,6 @@
 		<!-- Stili css -->
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<link rel="stylesheet" href="./assets/css/querymid.css" />
-		<link rel="stylesheet" href="./assets/css/querytab.css" />
-		<link rel="stylesheet" href="./assets/css/queryfull.css" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,8 +61,9 @@
 										src="./assets/img/search.svg"
 										alt="search"
 									/>
+									<span>Cerca</span>
 								</a>
-								<span>Cerca</span>
+								
 							</li>
 							<li>
 								<a href="#">
@@ -72,8 +71,9 @@
 										src="./assets/img/libreria.svg"
 										alt="library"
 									/>
+									<span>La tua libreria</span>
 								</a>
-								<span>La tua libreria</span>
+								
 							</li>
 							<li class="playlist">
 								<h3>Playlist</h3>
@@ -168,50 +168,80 @@
 								<!-- NOTE Album -->
 								<div class="songs">
 									<div class="song-card">
-										<img
-											src="./assets/img/metal_lifting.jpg"
-											alt="cover"
-										/>
+										<div class="hover">
+											<i class="fa-solid fa-play"></i>
+										</div>
+											<div>
+												<img
+													src="./assets/img/metal_lifting.jpg"
+													alt="cover"
+												/>
+											</div>
 										<h3>Heavy Metal</h3>
 										<p>Top Musichine</p>
 									</div>
 									<div class="song-card">
-										<img
-											src="./assets/img/stranger.jpeg"
-											alt="cover"
-										/>
+										<div class="hover">
+											<i class="fa-solid fa-play"></i>
+										</div>
+											<div>
+												<img
+													src="./assets/img/stranger.jpeg"
+													alt="cover"
+												/>
+											</div>
 										<h3>Stranger Things</h3>
 										<p>Top Musichine</p>
 									</div>
 									<div class="song-card">
-										<img
-											src="./assets/img/aquietplace.jpeg"
-											alt="cover"
-										/>
+										<div class="hover">
+											<i class="fa-solid fa-play"></i>
+										</div>
+											<div>
+												<img
+													src="./assets/img/aquietplace.jpeg"
+													alt="cover"
+												/>
+											</div>
 										<h3>A quiet place</h3>
 										<p>Top Musichine</p>
 									</div>
 									<div class="song-card">
-										<img
-											src="./assets/img/split.jpeg"
-											alt="cover"
-										/>
+										<div class="hover">
+											<i class="fa-solid fa-play"></i>
+										</div>
+											<div>
+												<img
+													src="./assets/img/split.jpeg"
+													alt="cover"
+												/>
+											</div>
 										<h3>Split</h3>
 										<p>Top Musichine</p>
 									</div>
 									<div class="song-card">
-										<img
-											src="./assets/img/cure.jpeg"
-											alt="cover"
-										/>
+										<div class="hover">
+											<i class="fa-solid fa-play"></i>
+										</div>
+											<div>
+												<img
+													src="./assets/img/cure.jpeg"
+													alt="cover"
+												/>
+											</div>
 										<h3>A cure for wellness</h3>
 										<p>Top Musichine</p>
 									</div>
 									<div class="song-card">
-										<img
-											src="./assets/img/sinister.jpeg"
-											alt="cover"
-										/>
+										<div class="hover">
+											<i class="fa-solid fa-play"></i>
+										</div>
+											<div>
+												<img
+													src="./assets/img/sinister.jpeg"
+													alt="cover"
+												/>
+											</div>
 										<h3>Sinister</h3>
 										<p>Top Musichine</p>
 									</div>
@@ -226,23 +256,33 @@
 								</p>
 								<div class="row-foryou">
 									<div class="foryou-card">
-										<img
-											src="./assets/img/radar.jpeg"
-											alt="radar"
-										/>
+										<div class="hover">
+											<i class="fa-solid fa-play"></i>
+										</div>
+											<div>
+												<img
+												src="./assets/img/radar.jpeg"
+												alt="radar"
+												/>
+											</div>
 										<h3>Release Radar</h3>
 									</div>
 									<div class="foryou-card">
-										<img
-											src="./assets/img/mixdaily.jpeg"
-											alt="daily mix"
-										/>
+										<div class="hover">
+											<i class="fa-solid fa-play"></i>
+										</div>
+										<div>
+											<img
+												src="./assets/img/mixdaily.jpeg"
+												alt="daily mix"
+											/>
+										</div>
 										<h3>Daily Mix 1</h3>
 									</div>
 								</div>
 							</div>
 							<!-- NOTE Artisti  -->
-							<div >
+							<div class="singer">
 								<h2>Artisti più popolari</h2>
 								<p>
 									Più ascolti, più accurati saranno i
@@ -250,17 +290,21 @@
 								</p>
 								<div class="artists">
 									<div class="artists-card">
-										<img
+										<div>
+											<img
 											src="./assets/img/youg.jpeg"
 											alt="artist"
-										/>
+										/>	
+										</div>
 										<h3>Youg</h3>
 									</div>
 									<div class="artists-card">
-										<img
+										<div>
+											<img
 											src="./assets/img/einaudi.jpeg"
 											alt="artist"
 										/>
+										</div>
 										<h3>Einaudi</h3>
 									</div>
 								</div>
@@ -273,7 +317,9 @@
 			<div class="web-app-player">
 				<!-- NOTE Musica selezionata -->
 				<div class="playing">
-					<img src="./assets/img/sinister.jpeg" alt="cover" />
+					<div>
+						<img src="./assets/img/sinister.jpeg" alt="cover" />
+					</div>
 					<div>
 						<h6>Sinister</h6>
 						<p>
