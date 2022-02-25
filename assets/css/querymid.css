@@ -19,6 +19,10 @@
 
 	/* NOTE  Testi nav-aside */
 
+	a i + span{
+		display: block;
+	}
+
 	.nav-aside {
 		margin-top: 20px;
 		margin-right: auto;
@@ -35,15 +39,25 @@
 
 	/* NOTE Playlist */
 
+	.aside{
+		height: 100%;
+		overflow-y: hidden;
+	}
+
+	.playlist{
+		overflow: scroll;
+		margin: 10px auto 0 15px;
+		flex-shrink: 1;
+	}
+
 	.playlist ul,
 	.playlist h3 {
 		display: block;
 	}
 
-	.playlist {
-		padding-top: 1em;
+	.playlist{
+		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
 	}
 
 	.aside ul:nth-of-type(2) {
@@ -128,6 +142,8 @@
 		opacity: 1;
 	}
 
+	/* TODO Controllare valori proprietà per --webkit */
+
 	.timeline input[type="range"]:hover::-webkit-slider-runnable-track,
 	.timeline input[type="range"]:hover::-moz-range-track,
 	.volume input[type="range"]:hover::-webkit-slider-runnable-track,
@@ -211,10 +227,6 @@
 		font-size: 3em;
 		border: 3px solid #fff;
 		border-radius: 50%;
-	}
-
-	.hover {
-		display: none;
 	}
 }
 

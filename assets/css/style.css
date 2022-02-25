@@ -28,7 +28,8 @@ h6 + p,
 .icon,
 .playlist-item,
 .account a,
-.artists span {
+.artists span,
+a i + span{
 	color: #fff;
 }
 
@@ -108,8 +109,12 @@ h6 + p,
 	font-size: 0.8rem;
 }
 
-.playlist a i {
+.playlist a{
 	padding: 0.3em 0;
+}
+
+.playlist a i{
+	padding-right: 5px;
 	vertical-align: middle;
 	font-size: 2em;
 	color: #fff;
@@ -403,4 +408,9 @@ h6 {
 	background-color: #3379ce;
 	height: 10px;
 	border-radius: 20px;
+}
+
+.hover,
+a i + span{
+	display: none;
 }
