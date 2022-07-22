@@ -94,10 +94,13 @@ a i + span{
 }
 
 .playlist {
+	overflow-x: hidden;
 	margin-top: 10px;
 	line-height: 2em;
 	font-weight: 600;
 }
+
+
 
 .playlist h3 {
 	font-size: 1.5em;
@@ -351,7 +354,6 @@ h6 {
 .timeline input[type="range"] {
 	flex-grow: 1;
 	margin: 0 5px;
-	-webkit-appearance: none;
 	cursor: pointer;
 	background: transparent;
 }
@@ -383,7 +385,6 @@ h6 {
 .settings input[type="range"] {
 	flex-grow: 1;
 	margin: 0 5px;
-	-webkit-appearance: none;
 	cursor: pointer;
 	background: transparent;
 }
